@@ -1,4 +1,13 @@
+http://imgur.com/a/IjkWT
+
 I had an issue with GitHub that I could not solve with over 2 hours of research.  If anyone can help me figure that out, it would be great.
 In the meantime, below are screenshots of the graphs I produced.
 
-http://imgur.com/a/IjkWT
+The error code does point out one file being too large:  
+I do not know why that file was being pushed, as it was not in my repo (it had been, but had been removed and added to the .gitignore)
+Also, when I've had that problem in the past it has just skipped that file.  Not stopped the entire push.
+
+I think the real culprit is the "pre-receive hook declined" that everyone I've heard said normally happened when pushing to a protected branch.
+This branch is not protected.
+
+
